@@ -1,0 +1,36 @@
+  <c-row>
+    <c-card class="mb-4">
+      <c-card-header>
+        <strong>React Component</strong>
+      </c-card-header>
+      <c-card-body >
+          <parcel [config]="config" 
+          [mountParcel]="mountRootParcel"
+          ></parcel>
+      </c-card-body>
+    </c-card>
+
+    <c-card class="mb-4">
+      <c-card-header>
+        <strong>Angular Component</strong>
+      </c-card-header>
+      <c-card-body class="test">
+          <parcel 
+          [config]="ngconfig" 
+          [mountParcel]="mountRootParcel"
+          ></parcel>
+      </c-card-body>
+    </c-card>
+
+    <c-card class="mb-4">
+      <c-card-header>
+        <strong>Angular Component</strong>
+      </c-card-header>
+      <c-card-body class="test">
+          <parcel 
+          [config]="ngconfigSub" 
+          [mountParcel]="mountRootParcel"
+          ></parcel>
+      </c-card-body>
+    </c-card>
+  </c-row>
